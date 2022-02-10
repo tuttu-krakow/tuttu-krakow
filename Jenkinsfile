@@ -9,9 +9,7 @@ pipeline {
     
   }
   
-  envrionment {
-    NEW_VERSION = '1.14.0'
-  }
+
   
   stages {
   
@@ -19,7 +17,6 @@ pipeline {
       
       steps {
          echo ' Testing out building of the application %date% %time% '
-        echo " building version ${NEW_VERSION}"
         
       }
     }
