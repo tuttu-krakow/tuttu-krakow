@@ -4,7 +4,7 @@ pipeline {
   
   parameters {
     
-    choice(name: 'VERSION' , choices: ['1.1.0' , '1.2.0' , '1.3.0'] , descriptions: 'version which is used to deploy to PROD')
+    choice(name: 'VERSION' , choices: ['1.1.0' , '1.2.0' , '1.3.0'] , description: 'version which is used to deploy to PROD')
     booleanParam(name: 'executeTests', defaultvalue: true , description: '')
     
   }
